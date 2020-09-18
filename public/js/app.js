@@ -3,6 +3,7 @@ const form = document.querySelector('form')
 const search = document.querySelector('input')
 const place = document.querySelector('#place')
 const weather = document.querySelector('#weather')
+console.log(form)
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -11,7 +12,7 @@ form.addEventListener('submit', (e)=>{
 const address = search.value
 console.log(address)
 
-    fetch(`/weather?address=${address}`).then(res=> res.json().then(data=> {
+    fetch(`/endpoint?address=${address}`).then(res=> res.json().then(data=> {
         if(data.error){
             place.textContent = data.error
         } else{

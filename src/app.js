@@ -28,11 +28,19 @@ app.get('', (req, res)=>{
 })
 
 
+app.get('/weather', (req, res)=>{
+    res.render('index', {
+        title:'Home Page'
+    })
+})
+
+
 app.get('/about', (req, res)=>{
     res.render('about', {
         title:'about page'
     })
 })
+
 app.get('/help', (req, res)=>{
     res.render('help', {
         title:'help page'
@@ -40,7 +48,7 @@ app.get('/help', (req, res)=>{
 })
 
 
-   app.get('/weather', (req, res)=>{
+   app.get('/endpoint', (req, res)=>{
        if(!req.query.address){
         res.send({
             error:'please provide address'
