@@ -11,7 +11,7 @@ form.addEventListener('submit', (e)=>{
 const address = search.value
 console.log(address)
 
-    fetch(`http://localhost:3001/weather?address=${address}`).then(res=> res.json().then(data=> {
+    fetch(`gir/weather?address=${address}`).then(res=> res.json().then(data=> {
         if(data.error){
             place.textContent = data.error
         } else{
