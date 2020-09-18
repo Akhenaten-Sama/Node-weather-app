@@ -33,8 +33,15 @@ button{
 form{
     height: 2rem;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 8rem;
 }
 
+
+
+.result{
+    text-align: center;
+}
 button:hover{
     background: #2C2C65;
     transform: scaleX(1.08);
