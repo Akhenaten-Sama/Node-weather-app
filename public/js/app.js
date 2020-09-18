@@ -17,7 +17,7 @@ console.log(address)
             place.textContent = data.error
         } else{
             place.textContent =   `Here is the weather at ${data.forecast.location}:`
-            weather.textContent = `  The temperature is ${data.forecast.temperature} degrees and a look up the sky will show ${data.forecast.weather}`
+            weather.textContent = `  The temperature is currently ${data.forecast.temperature} degrees and a look up the sky will show ${data.forecast.weather}`
         }
     }
 
